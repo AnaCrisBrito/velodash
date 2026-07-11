@@ -1,5 +1,7 @@
 # 🚀 VeloDash - Dashboard Operacional e de Performance
 
+> 🔗 **Acesse a aplicação em produção aqui:** [https://velodash-dashboard.streamlit.app/](https://velodash-dashboard.streamlit.app/)
+
 O **VeloDash** é uma aplicação web interativa desenvolvida em Python para análise de dados operacionais e gerenciamento de métricas financeiras de pedidos. 
 
 ---
