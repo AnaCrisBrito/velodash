@@ -1,45 +1,239 @@
-# 🚀 VeloDash - Dashboard Operacional e de Performance
+# VeloDash 🚀
 
-> 🔗 **Acesse a aplicação em produção aqui:** [https://velodash-dashboard.streamlit.app/](https://velodash-dashboard.streamlit.app/)
+### Dashboard Operacional e de Performance
 
-O **VeloDash** é uma aplicação web interativa desenvolvida em Python para análise de dados operacionais e gerenciamento de métricas financeiras de pedidos. 
+> Aplicação web interativa desenvolvida em Python para análise de dados operacionais, acompanhamento de indicadores e visualização de métricas financeiras.
 
----
+<p align="center">
+  <img src="assets/velodash-preview.png" alt="Preview do VeloDash">
+</p>
 
-## 📊 Funcionalidades Principais
-
-*   **Carregamento Dinâmico de Dados:** Suporte para importação de planilhas nos formatos `.csv` e `.xlsx` com validação de estrutura interna à prova de falhas.
-*   **Métricas em Tempo Real (KPIs):** Visualização instantânea do total de registros, valor financeiro acumulado e média de faturamento por pedido.
-*   **Filtros Avançados Globais:** Filtragem dinâmica na barra lateral por período temporal, categorias de produtos e status do processo.
-*   **Centro de Gráficos Interativos:** 
-    *   *Gráfico de Linha:* Evolução temporal da soma de valores ao longo dos dias.
-    *   *Gráfico de Rosca:* Distribuição percentual do volume financeiro por status.
-*   **Tabela de Auditoria Estilizada:** Exibição centralizada dos dados brutos com pílulas e tags de status de acordo com o progresso do pedido.
-*   **Exportação customizada (Etapa 6):** Botão nativo para baixar no computador um arquivo `.csv` contendo apenas os dados filtrados na tela.
-*   **Resiliência a Erros (Etapa 7):** Blocos de tratamento de exceções (`try/except`) que blindam a aplicação contra planilhas corrompidas ou dados mal formatados.
+<p align="center">
+  <a href="https://velodash-dashboard.streamlit.app/">
+    🌐 Acessar aplicação em produção
+  </a>
+</p>
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Sobre o projeto
 
-*   **Python 3**
-*   **Streamlit** (Interface e Layout do Dashboard)
-*   **Pandas** (Tratamento, Higienização e Manipulação de Dados)
-*   **Plotly Express** (Gráficos Interativos de Performance)
-*   **SQLite3** (Estrutura de Banco de Dados)
+O **VeloDash** é uma aplicação web interativa desenvolvida em Python com foco na análise e visualização de dados operacionais e financeiros relacionados a pedidos.
+
+A aplicação permite importar arquivos de dados, realizar filtros personalizados, acompanhar indicadores de desempenho e visualizar informações por meio de gráficos interativos.
+
+O projeto busca transformar dados brutos em informações mais claras e organizadas, facilitando a análise de desempenho e o acompanhamento dos principais indicadores da operação.
 
 ---
 
-## 📂 Como Rodar o Projeto Localmente
+## Funcionalidades
 
-1. Clone este repositório:
-   ```bash
-   git clone [https://github.com/SEU_USUARIO_AQUI/velodash.git](https://github.com/SEU_USUARIO_AQUI/velodash.git)
+### 📂Importação e validação de dados
 
-2. Crie e ative seu ambiente virtual (.venv).
-   
-3. Instale as dependências obrigatórias:
-   pip install -r requirements.txt
-  
-4. Execute o servidor do Streamlit:
-   streamlit run src/app.py
+- Importação de arquivos nos formatos `.csv` e `.xlsx`;
+- Validação da estrutura dos arquivos importados;
+- Tratamento de dados inconsistentes ou mal formatados;
+- Tratamento de exceções durante o carregamento e processamento dos arquivos.
+
+### 📊 Indicadores de desempenho
+
+O dashboard apresenta indicadores (KPIs) calculados dinamicamente a partir dos dados carregados:
+
+- Total de registros;
+- Valor financeiro acumulado;
+- Média de faturamento por pedido.
+
+Os indicadores são atualizados conforme os filtros aplicados pelo usuário.
+
+### 🔎Filtros interativos
+
+A aplicação possui filtros globais que permitem analisar os dados de acordo com diferentes critérios:
+
+- Período;
+- Categoria de produto;
+- Status do processo.
+
+### 📈 Visualização de dados
+
+O VeloDash utiliza gráficos interativos para facilitar a interpretação das informações:
+
+- **Gráfico de linha:** apresenta a evolução temporal da soma dos valores;
+- **Gráfico de rosca:** apresenta a distribuição percentual do volume financeiro por status.
+
+### 📋 Tabela de auditoria
+
+Os dados podem ser visualizados em uma tabela centralizada, permitindo consultar os registros utilizados na análise.
+
+Os diferentes status dos pedidos recebem elementos visuais de destaque, facilitando sua identificação.
+
+### 📥 Exportação de dados
+
+Após aplicar os filtros desejados, o usuário pode exportar os dados resultantes para um arquivo `.csv`.
+
+Dessa forma, é possível utilizar posteriormente apenas o conjunto de informações selecionado durante a análise.
+
+---
+
+## Tecnologias utilizadas
+
+| Tecnologia | Aplicação no projeto |
+|---|---|
+| **Python 3** | Desenvolvimento da aplicação e processamento dos dados |
+| **Streamlit** | Construção da interface e do dashboard interativo |
+| **Pandas** | Manipulação, tratamento e análise dos dados |
+| **Plotly Express** | Criação dos gráficos interativos |
+| **SQLite3** | Estrutura e gerenciamento do banco de dados |
+
+---
+
+## Estrutura do projeto
+
+```text
+velodash/
+│
+├── .devcontainer/       # Configuração do ambiente de desenvolvimento
+├── assets/              # Recursos visuais utilizados no projeto
+├── modelo_arquivos/     # Arquivos utilizados como modelo para importação
+├── src/                 # Código-fonte da aplicação
+│
+├── .gitignore           # Arquivos e pastas ignorados pelo Git
+├── README.md            # Documentação do projeto
+└── requirements.txt     # Dependências da aplicação
+```
+
+> O ambiente virtual `.venv` é utilizado localmente para gerenciamento das dependências e não faz parte dos arquivos versionados do projeto.
+
+---
+
+## Como executar o projeto localmente
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/AnaCrisBrito/velodash.git
+```
+
+### 2. Acesse a pasta do projeto
+
+```bash
+cd velodash
+```
+
+### 3. Crie um ambiente virtual
+
+No Windows:
+
+```bash
+python -m venv .venv
+```
+
+No Linux/macOS:
+
+```bash
+python3 -m venv .venv
+```
+
+### 4. Ative o ambiente virtual
+
+**Windows:**
+
+```bash
+.venv\Scripts\activate
+```
+
+**Linux/macOS:**
+
+```bash
+source .venv/bin/activate
+```
+
+### 5. Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 6. Execute a aplicação
+
+```bash
+streamlit run src/app.py
+```
+
+Após executar o comando, o Streamlit disponibilizará a aplicação localmente no navegador.
+
+---
+
+## Aplicação em produção
+
+O VeloDash está disponível para acesso online através do Streamlit:
+
+**https://velodash-dashboard.streamlit.app/**
+
+---
+
+## Tratamento de erros
+
+Para aumentar a confiabilidade da aplicação, foram implementadas rotinas de tratamento de exceções utilizando `try/except`.
+
+Essas rotinas permitem lidar com situações como:
+
+- Arquivos corrompidos;
+- Estruturas de planilhas incompatíveis;
+- Dados em formatos inesperados;
+- Problemas durante o processamento das informações.
+
+O objetivo é evitar que entradas inválidas interrompam inesperadamente a execução da aplicação.
+
+---
+
+## Principais conceitos aplicados
+
+Durante o desenvolvimento do VeloDash foram trabalhados conceitos relacionados a:
+
+- Programação em Python;
+- Manipulação e análise de dados;
+- Tratamento e validação de arquivos;
+- Criação e utilização de indicadores (KPIs);
+- Visualização de dados;
+- Construção de dashboards interativos;
+- Filtros dinâmicos;
+- Exportação de dados;
+- Tratamento de exceções;
+- Banco de dados;
+- Desenvolvimento de aplicações web;
+- Deploy de aplicações.
+
+---
+
+## Objetivo do projeto
+
+O principal objetivo do VeloDash é apresentar uma solução capaz de organizar e transformar dados operacionais em informações visuais e indicadores de fácil interpretação.
+
+Através de uma interface interativa, o usuário pode explorar os dados, identificar padrões, acompanhar métricas e gerar conjuntos de informações filtradas para análises posteriores.
+
+---
+
+## Próximos passos
+
+Algumas possibilidades de evolução para o projeto incluem:
+
+- Ampliação dos indicadores disponíveis;
+- Inclusão de novos tipos de visualizações;
+- Aprimoramento da validação dos arquivos importados;
+- Expansão dos filtros disponíveis;
+- Melhorias na organização e experiência de uso da interface;
+- Implementação de novos recursos de análise de dados.
+
+---
+
+## Autora
+
+**Ana Cristina Brito**
+
+Estudante de **Sistemas para Internet**, com interesse em programação, desenvolvimento de aplicações web e análise de dados.
+
+---
+
+<p align="center">
+  Desenvolvido com Python e Streamlit.
+</p>
