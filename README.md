@@ -1,16 +1,23 @@
 # VeloDash 🚀
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python Version">
+  <img src="https://img.shields.io/badge/Streamlit-1.28%2B-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white" alt="Streamlit">
+  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/Status-Em%20Produ%C3%A7%C3%A3o-success?style=for-the-badge" alt="Status">
+</p>
+
 ### Dashboard Operacional e de Performance
 
 > Aplicação web interativa desenvolvida em Python para análise de dados operacionais, acompanhamento de indicadores e visualização de métricas financeiras.
 
 <p align="center">
-  <img src="assets/velodash-preview.png" alt="Preview do VeloDash">
+  <img src="assets/velodash-preview.png" alt="Preview do VeloDash" width="100%" style="border-radius: 8px;">
 </p>
 
 <p align="center">
-  <a href="https://velodash-dashboard.streamlit.app/">
-    🌐 Acessar aplicação em produção
+  <a href="https://velodash-dashboard.streamlit.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Acessar_Aplicação_em_Produção-Streamlit_Cloud-00C7B7?style=for-the-badge&logoColor=white" alt="Live Demo">
   </a>
 </p>
 
@@ -227,13 +234,21 @@ Algumas possibilidades de evolução para o projeto incluem:
 ---
 
 ## Autora
-
-**Ana Cristina Brito**
-
-Estudante de **Sistemas para Internet**, com interesse em programação, desenvolvimento de aplicações web e análise de dados.
-
----
-
-<p align="center">
-  Desenvolvido com Python e Streamlit.
-</p>
+<table border="0">
+  <tr>
+    <td align="center" width="150px">
+      <!-- Puxa automaticamente sua foto do perfil do GitHub -->
+      <img src="https://github.com/AnaCrisBrito.png" width="100px;" style="border-radius:50%;" alt="Ana Cristina Brito"/><br />
+      <b>Ana Cristina Brito</b>
+    </td>
+    <td>
+      Estudante de <b>Sistemas para Internet</b>, desenvolvedora com foco em aplicações web e análise de dados.<br/><br/>
+      <a href="https://github.com/AnaCrisBrito">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white" alt="GitHub">
+      </a>
+      <a href="https://velodash-dashboard.streamlit.app/">
+        <img src="https://img.shields.io/badge/Live_App-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit App">
+      </a>
+    </td>
+  </tr>
+</table>
