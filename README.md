@@ -237,7 +237,6 @@ Algumas possibilidades de evolução para o projeto incluem:
 <table border="0">
   <tr>
     <td align="center" width="150px">
-      <!-- Puxa automaticamente sua foto do perfil do GitHub -->
       <img src="https://github.com/AnaCrisBrito.png" width="100px;" style="border-radius:50%;" alt="Ana Cristina Brito"/><br />
       <b>Ana Cristina Brito</b>
     </td>
